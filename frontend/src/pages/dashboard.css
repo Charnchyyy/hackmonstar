@@ -1,0 +1,29 @@
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.header {
+    font-family: Nunito,sans-serif;
+    font-weight: 500 !important;
+}
+
+.separator {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
+}
+
+.icon {
+    font-size: 3rem;
+    color: #922c88;
+}
+
+.count {
+    font-size: 1.2rem;
+    color: #922c88;
+}
