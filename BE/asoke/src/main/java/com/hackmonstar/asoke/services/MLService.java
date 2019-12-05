@@ -17,13 +17,24 @@ public class MLService {
     public Object fetchAll(){
         List<ArrayList> mlList = new ArrayList<>();
         for (ML ml: mlRepository.findAll()) {
-            ArrayList<String> newML = new ArrayList<>();
-            newML.add(ml.getGrid_lat().toString());
-            newML.add(ml.getGrid_lng().toString());
-            newML.add(ml.getDensity().toString());
+            ArrayList<Float> newML = new ArrayList<>();
+            newML.add(ml.getGrid_lat());
+            newML.add(ml.getGrid_lng());
+            newML.add(ml.getDensity().floatValue());
             mlList.add(newML);
         }
-        System.out.println(mlList);
+        return mlList;
+    }
+
+    public Object fetchByStatus(String val){
+        List<ArrayList> mlList = new ArrayList<>();
+        for (ML ml: mlRepository.findByTs(val)) {
+            ArrayList<Float> newML = new ArrayList<>();
+            newML.add(ml.getGrid_lat());
+            newML.add(ml.getGrid_lng());
+            newML.add(ml.getDensity().floatValue());
+            mlList.add(newML);
+        }
         return mlList;
     }
 }
