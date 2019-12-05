@@ -2,6 +2,8 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import Dashboard from './pages/dashboard'
+// import SimpleDeckglMap from './components/deckgl/simplemap';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+
     <Dashboard/>
   );
 }
