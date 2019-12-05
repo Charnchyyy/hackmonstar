@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: local
+
+  datasource:
+    url: jdbc:sqlite:/Users/phusithsuktrakul/Documents/hackmonstar-db/gps_rama4.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: com.hackmonstar.asoke.configurations.SQLiteDialect
+
+server:
+  port: 8080
+  sessionTimeout: 30
+  servlet:
+    context-path: /fadetaxi/v1
