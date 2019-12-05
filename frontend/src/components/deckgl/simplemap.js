@@ -8,8 +8,8 @@ import { isWebGL2 } from '@luma.gl/core';
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoidGlueXplcm8iLCJhIjoiY2szczgyNHduMDMwYjNtcmw2eTA3azA4aSJ9.UnOXmV4S-O6x4CzjrftJWg';
 
 const DATA_URL =
-    'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/screen-grid/uber-pickup-locations.json'; // eslint-disable-line
-    // http://localhost:8080/fadetaxi/v1/ml
+    // 'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/screen-grid/uber-pickup-locations.json'; // eslint-disable-line
+    'http://localhost:8080/fadetaxi/v1/ml'
 const INITIAL_VIEW_STATE = {
     longitude: 100.52345,
     latitude: 13.7245,
