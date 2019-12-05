@@ -47,7 +47,7 @@ export default class Dashboard extends Component {
         if (selection === '1') {
             this.setState({ 
                 activeData: this.state.data1, 
-                color1: { borderColor: '#29CBF3', borderWidth: '2px', borderStyle: 'solid' },
+                color1: { borderColor: '#5DADE5', borderWidth: '2px', borderStyle: 'solid' },
                 color2: {},
                 color3: {}
             })
@@ -56,7 +56,7 @@ export default class Dashboard extends Component {
             this.setState({ 
                 activeData: this.state.data2, 
                 color1: {},
-                color2: { borderColor: '#29CBF3', borderWidth: '2px', borderStyle: 'solid' },
+                color2: { borderColor: '#5DADE5', borderWidth: '2px', borderStyle: 'solid' },
                 color3: {}
             })
         }
@@ -65,7 +65,7 @@ export default class Dashboard extends Component {
                 activeData: this.state.data3, active: 3,
                 color1: {},
                 color2: {},
-                color3: { borderColor: '#29CBF3', borderWidth: '2px', borderStyle: 'solid' }
+                color3: { borderColor: '#5DADE5', borderWidth: '2px', borderStyle: 'solid' }
             })
         }
     }
@@ -73,11 +73,11 @@ export default class Dashboard extends Component {
     render() {
         return (
             <Fragment >
-                <div style={{ background: '#f8f8f8' }}>
+                <div>
                     <Row className="card">
                         <Col>
-                            <h1>
-                                <span className="header">Dashboard</span>
+                            <h1 style={{margin: '1rem'}}>
+                                <span style={{marginLeft: '2rem'}}>Dashboard</span>
                             </h1>
                             {/* <div className="separator" /> */}
                         </Col>
