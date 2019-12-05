@@ -9,10 +9,10 @@ const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoidGlueXplcm8iLCJhIjoiY2szczgyNHduMDMwYjNt
 
 const DATA_URL =
     'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/screen-grid/uber-pickup-locations.json'; // eslint-disable-line
-
+    // http://localhost:8080/fadetaxi/v1/ml
 const INITIAL_VIEW_STATE = {
-    longitude: -73.75,
-    latitude: 40.73,
+    longitude: 100.52345,
+    latitude: 13.7245,
     zoom: 16,
     maxZoom: 16,
     pitch: 0,

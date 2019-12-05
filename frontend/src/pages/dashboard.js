@@ -21,7 +21,7 @@ export default class Dashboard extends Component {
     }
 
     componentDidMount() {
-        const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=126293cbe36ad88482598ec4e7595380`
+        const url = `http://localhost:8080/fadetaxi/v1/ml`
         axios.get(url)
             .then(res => {
                 const results = res.data.results;
