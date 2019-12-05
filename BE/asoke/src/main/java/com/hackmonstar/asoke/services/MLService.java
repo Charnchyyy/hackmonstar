@@ -18,8 +18,8 @@ public class MLService {
         List<ArrayList> mlList = new ArrayList<>();
         for (ML ml: mlRepository.findAll()) {
             ArrayList<Float> newML = new ArrayList<>();
-            newML.add(ml.getGrid_lat());
             newML.add(ml.getGrid_lng());
+            newML.add(ml.getGrid_lat());
             newML.add(ml.getDensity().floatValue());
             mlList.add(newML);
         }
@@ -30,8 +30,8 @@ public class MLService {
         List<ArrayList> mlList = new ArrayList<>();
         for (ML ml: mlRepository.findByTs(val)) {
             ArrayList<Float> newML = new ArrayList<>();
-            newML.add(ml.getGrid_lat());
             newML.add(ml.getGrid_lng());
+            newML.add(ml.getGrid_lat());
             newML.add(ml.getDensity().floatValue());
             mlList.add(newML);
         }
